@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        <title>Shopify - login</title>
+    </head>
+    <body>
+        <div id = "mainBox">
+            <div id = "loginSection">
+                <div id = "loginContent">
+                    <img src = "res/syncee-logo-300px.png" id = "logoImage">
+                    <h1>Login</h1>
+                    <p class = "grayText hugeText">See your growth and get consulting support!</p>
+                    <div id = "googleLogin">
+                        <div id="g_id_onload"
+                            data-client_id="1044140744167-2rtto3fj6f4n6kmfr6abks05ncsd4ll1.apps.googleusercontent.com"
+                            data-callback = "googleLogin">
+                        </div>
+                        <div class="g_id_signin"
+                            data-type="standard"
+                            data-size="large"
+                            data-theme="outline"
+                            data-text="sign_in_with"
+                            data-shape="rectangular"         
+                            data-logo_alignment="left">
+                        </div>
+                    </div>
+                    <p id = "emailSignInText" class = "grayText">or Sign in with Email</p>
+                    <p>Email*</p>
+                    <input type = "text" id = "inputEmail" class = "textInput" placeholder="mail@website.com">
+                    <p>Password*</p>
+                    <input type = "password" id = "inputPassword" class = "textInput" placeholder="Min. 8 character">
+                    <div id = "loginSettings"> 
+                        <div id = "loginSettingRememberMe">
+                            <input type = "checkbox" id = "loginSettingRememberMeCheckbox" name = "loginSettingRememberMeCheckbox" checked = "checked">
+                            <label for = "loginSettingRememberMeCheckbox">Remember me</label>
+                        </div>
+                        <div id = "loginSettingForgotPassword">
+                            <a href = "recover.html" class = "purpleText">Forgot password?</a>
+                        </div>
+                    </div>
+                    <p id = "loginButton">Login</p>
+                    <p>Not registered yet? <span class = "purpleText"> Create an account</span></p>
+                    <p id = "errorMessage"></p>
+                    <p id = "copyRight" class = "grayText">2022 Syncee, All rights reserved.</p>
+                </div>
+            </div>
+            <div id = "backgroundSection">
+
+            </div>
+        </div>
+    </body>
+</html>
