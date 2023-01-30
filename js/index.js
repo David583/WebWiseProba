@@ -50,5 +50,6 @@ function validate() {
 function googleLogin(responze) {
     let userData = JSON.parse(atob(responze['credential'].split('.')[1]));
     window.sessionStorage.setItem("email", userData['email']);
+    window.sessionStorage.setItem("password", "Google bejelentekzés!");
     window.location.href = "userinfo.html";
 }
